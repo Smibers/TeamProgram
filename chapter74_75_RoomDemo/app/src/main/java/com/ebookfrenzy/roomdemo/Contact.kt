@@ -25,6 +25,8 @@ class Contact {
     @ColumnInfo(name = "fee")
     var fee: String? = null
 
+    @ColumnInfo(name = "date")
+    var date: String? = null
 
     @ColumnInfo(name = "perk")
     var perk: String? = null
@@ -40,12 +42,13 @@ class Contact {
         this.quantity = quantity
     }*/
 
-    constructor(cardName: String, cardBrand: String, ownership:String, perk:String, useCategory: String, fee: String) { //variables for DB
+    constructor(cardName: String, date:String ,cardBrand: String, ownership:String, perk:String, useCategory: String, fee: String) { //variables for DB
         this.cardName = cardName
         this.fee=fee
         this.perk=perk
         this.ownership = ownership
         this.useCategory = useCategory
+        this.date=date
         this.cardBrand = cardBrand //from demo, use for contactNumber
 
         //this.id = id
