@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground"
+    android:orientation="vertical"
+    app:cardBackgroundColor="#81C784"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp">
+
+    <RelativeLayout
+        android:layout_width="382dp"
+        android:layout_height="178dp">
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="402dp"
+        android:layout_height="179dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/perk_row"
+            android:layout_width="123dp"
+            android:layout_height="21dp"
+            android:text="perk"
+            app:layout_constraintStart_toEndOf="@+id/ownership_row"
+            app:layout_constraintTop_toBottomOf="@+id/fee_row" />
+
+        <TextView
+            android:id="@+id/ownership_row"
+            android:layout_width="158dp"
+            android:layout_height="30dp"
+            android:text="ownership"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fee_row" />
+
+        <TextView
+            android:id="@+id/fee_row"
+            android:layout_width="365dp"
+            android:layout_height="27dp"
+            android:text="fee"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/useCategory_row" />
+
+        <TextView
+            android:id="@+id/useCategory_row"
+            android:layout_width="363dp"
+            android:layout_height="28dp"
+            android:text="useCategory"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/number_row" />
+
+        <ImageView
+            android:id="@+id/deleteBtn"
+            android:layout_width="71dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="9dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+        <TextView
+            android:id="@+id/primarykey_row"
+            android:layout_width="195dp"
+            android:layout_height="35dp"
+            android:text="PK"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="198dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/number_row"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="cardBrand"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/contact_row"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TextView
+            android:id="@+id/contact_row"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="cardName"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    z
+</androidx.cardview.widget.CardView>
