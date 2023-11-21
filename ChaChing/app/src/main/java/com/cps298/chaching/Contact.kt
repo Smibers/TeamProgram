@@ -13,8 +13,8 @@ class Contact {
     @ColumnInfo(name = "card")
     var id: Int = 0
 
-    @ColumnInfo(name = "ownership")
-    var ownership: String? = null
+//    @ColumnInfo(name = "ownership")
+//    var ownership: String? = null
 
     @ColumnInfo(name = "cardName")
     var cardName: String? = null
@@ -25,7 +25,7 @@ class Contact {
     @ColumnInfo(name = "fee")
     var fee: String? = null
 
-    @ColumnInfo(name = "experation")
+    @ColumnInfo(name = "expiration")
     var expiration: String? = null
 
     @ColumnInfo(name = "perk")
@@ -42,12 +42,12 @@ class Contact {
         this.quantity = quantity
     }*/
 
-    constructor(cardName: String, expiration: String, cardBrand: String, ownership:String, perk:String, useCategory: String, fee: String) { //variables for DB
+    constructor(cardName: String, expiration: String, cardBrand: String, perk:String, useCategory: String, fee: String) { //variables for DB
         this.cardName = cardName
         this.fee=fee
         this.expiration=expiration
         this.perk=perk
-        this.ownership = ownership
+//        this.ownership = ownership
         this.useCategory = useCategory
         this.cardBrand = cardBrand //from demo, use for contactNumber
 

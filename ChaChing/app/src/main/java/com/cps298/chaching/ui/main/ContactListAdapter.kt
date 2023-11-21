@@ -47,7 +47,7 @@ class ContactListAdapter(private val contactItemLayout: Int) :  RecyclerView.Ada
             item4.text = it!![listPosition].perk
             item5.text = it!![listPosition].useCategory
             item6.text = it!![listPosition].fee
-            item7.text = it!![listPosition].ownership
+//            item7.text = it!![listPosition].ownership
         }
 
         //WE NEED THIS TO CALL THE ONCLICK IN THE ONBINDVIEWHOLDER

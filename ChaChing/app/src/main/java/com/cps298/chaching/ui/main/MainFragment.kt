@@ -65,10 +65,10 @@ class MainFragment : Fragment() {
             val fee = binding.fee.text.toString()
             val perk = binding.perk.text.toString()
             val useCategory = binding.useCategory.text.toString()
-            val ownership = binding.ownership.text.toString()
+//            val ownership = binding.ownership.text.toString()
 
             if (cardName != "" && cardBrand != "" && fee != "" && perk != "" && useCategory != "") {
-                val contact = Contact(cardName,expiration , cardBrand, fee, ownership, perk, useCategory  )
+                val contact = Contact(cardName,expiration , cardBrand, fee, perk, useCategory  )
                 viewModel.insertContact(contact)
                 clearFields()
             } else {
@@ -175,7 +175,7 @@ class MainFragment : Fragment() {
         binding.cardName.setText("")
         binding.cardBrand.setText("")
         binding.fee.setText("")
-        binding.ownership.setText("")
+//        binding.ownership.setText("")
         binding.expiration.setText("")
         binding.useCategory.setText("")
         binding.perk.setText("")
