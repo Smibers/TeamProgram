@@ -34,46 +34,41 @@ public final class ContactDao_Impl implements ContactDao {
     this.__insertionAdapterOfContact = new EntityInsertionAdapter<Contact>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `contacts` (`card`,`ownership`,`cardName`,`useCategory`,`fee`,`experation`,`perk`,`cardBrand`) VALUES (nullif(?, 0),?,?,?,?,?,?,?)";
+        return "INSERT OR ABORT INTO `contacts` (`card`,`cardName`,`useCategory`,`fee`,`expiration`,`perk`,`cardBrand`) VALUES (nullif(?, 0),?,?,?,?,?,?)";
       }
 
       @Override
       public void bind(SupportSQLiteStatement stmt, Contact value) {
         stmt.bindLong(1, value.getId());
-        if (value.getOwnership() == null) {
+        if (value.getCardName() == null) {
           stmt.bindNull(2);
         } else {
-          stmt.bindString(2, value.getOwnership());
-        }
-        if (value.getCardName() == null) {
-          stmt.bindNull(3);
-        } else {
-          stmt.bindString(3, value.getCardName());
+          stmt.bindString(2, value.getCardName());
         }
         if (value.getUseCategory() == null) {
-          stmt.bindNull(4);
+          stmt.bindNull(3);
         } else {
-          stmt.bindString(4, value.getUseCategory());
+          stmt.bindString(3, value.getUseCategory());
         }
         if (value.getFee() == null) {
-          stmt.bindNull(5);
+          stmt.bindNull(4);
         } else {
-          stmt.bindString(5, value.getFee());
+          stmt.bindString(4, value.getFee());
         }
         if (value.getExpiration() == null) {
-          stmt.bindNull(6);
+          stmt.bindNull(5);
         } else {
-          stmt.bindString(6, value.getExpiration());
+          stmt.bindString(5, value.getExpiration());
         }
         if (value.getPerk() == null) {
-          stmt.bindNull(7);
+          stmt.bindNull(6);
         } else {
-          stmt.bindString(7, value.getPerk());
+          stmt.bindString(6, value.getPerk());
         }
         if (value.getCardBrand() == null) {
-          stmt.bindNull(8);
+          stmt.bindNull(7);
         } else {
-          stmt.bindString(8, value.getCardBrand());
+          stmt.bindString(7, value.getCardBrand());
         }
       }
     };
@@ -128,11 +123,10 @@ public final class ContactDao_Impl implements ContactDao {
     final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
     try {
       final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "card");
-      final int _cursorIndexOfOwnership = CursorUtil.getColumnIndexOrThrow(_cursor, "ownership");
       final int _cursorIndexOfCardName = CursorUtil.getColumnIndexOrThrow(_cursor, "cardName");
       final int _cursorIndexOfUseCategory = CursorUtil.getColumnIndexOrThrow(_cursor, "useCategory");
       final int _cursorIndexOfFee = CursorUtil.getColumnIndexOrThrow(_cursor, "fee");
-      final int _cursorIndexOfExpiration = CursorUtil.getColumnIndexOrThrow(_cursor, "experation");
+      final int _cursorIndexOfExpiration = CursorUtil.getColumnIndexOrThrow(_cursor, "expiration");
       final int _cursorIndexOfPerk = CursorUtil.getColumnIndexOrThrow(_cursor, "perk");
       final int _cursorIndexOfCardBrand = CursorUtil.getColumnIndexOrThrow(_cursor, "cardBrand");
       final List<Contact> _result = new ArrayList<Contact>(_cursor.getCount());
@@ -142,13 +136,6 @@ public final class ContactDao_Impl implements ContactDao {
         final int _tmpId;
         _tmpId = _cursor.getInt(_cursorIndexOfId);
         _item.setId(_tmpId);
-        final String _tmpOwnership;
-        if (_cursor.isNull(_cursorIndexOfOwnership)) {
-          _tmpOwnership = null;
-        } else {
-          _tmpOwnership = _cursor.getString(_cursorIndexOfOwnership);
-        }
-        _item.setOwnership(_tmpOwnership);
         final String _tmpCardName;
         if (_cursor.isNull(_cursorIndexOfCardName)) {
           _tmpCardName = null;
@@ -210,11 +197,10 @@ public final class ContactDao_Impl implements ContactDao {
         final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
         try {
           final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "card");
-          final int _cursorIndexOfOwnership = CursorUtil.getColumnIndexOrThrow(_cursor, "ownership");
           final int _cursorIndexOfCardName = CursorUtil.getColumnIndexOrThrow(_cursor, "cardName");
           final int _cursorIndexOfUseCategory = CursorUtil.getColumnIndexOrThrow(_cursor, "useCategory");
           final int _cursorIndexOfFee = CursorUtil.getColumnIndexOrThrow(_cursor, "fee");
-          final int _cursorIndexOfExpiration = CursorUtil.getColumnIndexOrThrow(_cursor, "experation");
+          final int _cursorIndexOfExpiration = CursorUtil.getColumnIndexOrThrow(_cursor, "expiration");
           final int _cursorIndexOfPerk = CursorUtil.getColumnIndexOrThrow(_cursor, "perk");
           final int _cursorIndexOfCardBrand = CursorUtil.getColumnIndexOrThrow(_cursor, "cardBrand");
           final List<Contact> _result = new ArrayList<Contact>(_cursor.getCount());
@@ -224,13 +210,6 @@ public final class ContactDao_Impl implements ContactDao {
             final int _tmpId;
             _tmpId = _cursor.getInt(_cursorIndexOfId);
             _item.setId(_tmpId);
-            final String _tmpOwnership;
-            if (_cursor.isNull(_cursorIndexOfOwnership)) {
-              _tmpOwnership = null;
-            } else {
-              _tmpOwnership = _cursor.getString(_cursorIndexOfOwnership);
-            }
-            _item.setOwnership(_tmpOwnership);
             final String _tmpCardName;
             if (_cursor.isNull(_cursorIndexOfCardName)) {
               _tmpCardName = null;
@@ -296,11 +275,10 @@ public final class ContactDao_Impl implements ContactDao {
     final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
     try {
       final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "card");
-      final int _cursorIndexOfOwnership = CursorUtil.getColumnIndexOrThrow(_cursor, "ownership");
       final int _cursorIndexOfCardName = CursorUtil.getColumnIndexOrThrow(_cursor, "cardName");
       final int _cursorIndexOfUseCategory = CursorUtil.getColumnIndexOrThrow(_cursor, "useCategory");
       final int _cursorIndexOfFee = CursorUtil.getColumnIndexOrThrow(_cursor, "fee");
-      final int _cursorIndexOfExpiration = CursorUtil.getColumnIndexOrThrow(_cursor, "experation");
+      final int _cursorIndexOfExpiration = CursorUtil.getColumnIndexOrThrow(_cursor, "expiration");
       final int _cursorIndexOfPerk = CursorUtil.getColumnIndexOrThrow(_cursor, "perk");
       final int _cursorIndexOfCardBrand = CursorUtil.getColumnIndexOrThrow(_cursor, "cardBrand");
       final List<Contact> _result = new ArrayList<Contact>(_cursor.getCount());
@@ -310,13 +288,6 @@ public final class ContactDao_Impl implements ContactDao {
         final int _tmpId;
         _tmpId = _cursor.getInt(_cursorIndexOfId);
         _item.setId(_tmpId);
-        final String _tmpOwnership;
-        if (_cursor.isNull(_cursorIndexOfOwnership)) {
-          _tmpOwnership = null;
-        } else {
-          _tmpOwnership = _cursor.getString(_cursorIndexOfOwnership);
-        }
-        _item.setOwnership(_tmpOwnership);
         final String _tmpCardName;
         if (_cursor.isNull(_cursorIndexOfCardName)) {
           _tmpCardName = null;
@@ -376,11 +347,10 @@ public final class ContactDao_Impl implements ContactDao {
     final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
     try {
       final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "card");
-      final int _cursorIndexOfOwnership = CursorUtil.getColumnIndexOrThrow(_cursor, "ownership");
       final int _cursorIndexOfCardName = CursorUtil.getColumnIndexOrThrow(_cursor, "cardName");
       final int _cursorIndexOfUseCategory = CursorUtil.getColumnIndexOrThrow(_cursor, "useCategory");
       final int _cursorIndexOfFee = CursorUtil.getColumnIndexOrThrow(_cursor, "fee");
-      final int _cursorIndexOfExpiration = CursorUtil.getColumnIndexOrThrow(_cursor, "experation");
+      final int _cursorIndexOfExpiration = CursorUtil.getColumnIndexOrThrow(_cursor, "expiration");
       final int _cursorIndexOfPerk = CursorUtil.getColumnIndexOrThrow(_cursor, "perk");
       final int _cursorIndexOfCardBrand = CursorUtil.getColumnIndexOrThrow(_cursor, "cardBrand");
       final List<Contact> _result = new ArrayList<Contact>(_cursor.getCount());
@@ -390,13 +360,6 @@ public final class ContactDao_Impl implements ContactDao {
         final int _tmpId;
         _tmpId = _cursor.getInt(_cursorIndexOfId);
         _item.setId(_tmpId);
-        final String _tmpOwnership;
-        if (_cursor.isNull(_cursorIndexOfOwnership)) {
-          _tmpOwnership = null;
-        } else {
-          _tmpOwnership = _cursor.getString(_cursorIndexOfOwnership);
-        }
-        _item.setOwnership(_tmpOwnership);
         final String _tmpCardName;
         if (_cursor.isNull(_cursorIndexOfCardName)) {
           _tmpCardName = null;

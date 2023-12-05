@@ -2549,6 +2549,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable side_nav_bar
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2732,6 +2733,7 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
+id drawer_layout
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -2762,6 +2764,7 @@ id floating
 id forever
 id fragmentContainerView2
 id fragment_container_view_tag
+id frameLayout
 id frost
 id ghost_view
 id ghost_view_holder
@@ -2784,6 +2787,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id immediateStop
 id included
 id info
@@ -2865,7 +2869,11 @@ id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
 id nav_graph
+id nav_home
 id nav_host_fragment_container
+id nav_profile
+id nav_search
+id nav_view
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -2891,7 +2899,6 @@ id onInterceptTouchReturnSwipe
 id outline
 id outward
 id overshoot
-id ownership
 id ownership_row
 id packed
 id parallax
@@ -3024,6 +3031,7 @@ id text_gallery
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
+id text_slideshow
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -3035,6 +3043,8 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
+id toolbar2
 id top
 id topPanel
 id touch_outside
@@ -3174,12 +3184,15 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_profile
 layout fragment_search
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
 layout main_activity
+layout main_activity2
 layout main_fragment
+layout main_fragment2
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -3224,6 +3237,7 @@ layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout nav_controller
+layout nav_header_main
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -3249,6 +3263,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu activity_main_drawer
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
@@ -3280,6 +3295,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_settings
 string add_string
 string androidx_startup
 string app_name
@@ -3346,6 +3362,9 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string menu_gallery
+string menu_home
+string menu_slideshow
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_content_description
@@ -3384,6 +3403,11 @@ string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string nav_header_desc
+string nav_header_subtitle
+string nav_header_title
+string navigation_drawer_close
+string navigation_drawer_open
 string not_assigned
 string password_toggle_content_description
 string path_password_eye
@@ -3403,6 +3427,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppTheme
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -3671,6 +3696,7 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style DrawerArrowStyle
 style EmptyTheme
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Body_Text

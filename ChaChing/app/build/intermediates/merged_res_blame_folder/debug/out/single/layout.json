@@ -8,15 +8,31 @@
         "source": "com.cps298.chaching.app-main-53:/layout/contact_list_item.xml"
     },
     {
+        "merged": "com.cps298.chaching.app-mergeDebugResources-50:/layout/nav_header_main.xml",
+        "source": "com.cps298.chaching.app-main-53:/layout/nav_header_main.xml"
+    },
+    {
         "merged": "com.cps298.chaching.app-mergeDebugResources-50:/layout/nav_controller.xml",
         "source": "com.cps298.chaching.app-main-53:/layout/nav_controller.xml"
+    },
+    {
+        "merged": "com.cps298.chaching.app-mergeDebugResources-50:/layout/fragment_profile.xml",
+        "source": "com.cps298.chaching.app-main-53:/layout/fragment_profile.xml"
     },
     {
         "merged": "com.cps298.chaching.app-mergeDebugResources-50:/layout/main_activity.xml",
         "source": "com.cps298.chaching.app-main-53:/layout/main_activity.xml"
     },
     {
+        "merged": "com.cps298.chaching.app-mergeDebugResources-50:/layout/main_fragment2.xml",
+        "source": "com.cps298.chaching.app-main-53:/layout/main_fragment2.xml"
+    },
+    {
         "merged": "com.cps298.chaching.app-mergeDebugResources-50:/layout/main_fragment.xml",
         "source": "com.cps298.chaching.app-main-53:/layout/main_fragment.xml"
+    },
+    {
+        "merged": "com.cps298.chaching.app-mergeDebugResources-50:/layout/main_activity2.xml",
+        "source": "com.cps298.chaching.app-main-53:/layout/main_activity2.xml"
     }
 ]

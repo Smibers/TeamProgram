@@ -39,9 +39,9 @@ public final class ContactRoomDatabase_Impl extends ContactRoomDatabase {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `contacts` (`card` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `ownership` TEXT, `cardName` TEXT, `useCategory` TEXT, `fee` TEXT, `experation` TEXT, `perk` TEXT, `cardBrand` TEXT)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `contacts` (`card` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `cardName` TEXT, `useCategory` TEXT, `fee` TEXT, `expiration` TEXT, `perk` TEXT, `cardBrand` TEXT)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '5a53552b305c410d12a0489899f235e8')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'b639ecc8b7904a8d58afc9fab6486b83')");
       }
 
       @Override
@@ -85,13 +85,12 @@ public final class ContactRoomDatabase_Impl extends ContactRoomDatabase {
 
       @Override
       protected RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsContacts = new HashMap<String, TableInfo.Column>(8);
+        final HashMap<String, TableInfo.Column> _columnsContacts = new HashMap<String, TableInfo.Column>(7);
         _columnsContacts.put("card", new TableInfo.Column("card", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsContacts.put("ownership", new TableInfo.Column("ownership", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsContacts.put("cardName", new TableInfo.Column("cardName", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsContacts.put("useCategory", new TableInfo.Column("useCategory", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsContacts.put("fee", new TableInfo.Column("fee", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsContacts.put("experation", new TableInfo.Column("experation", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsContacts.put("expiration", new TableInfo.Column("expiration", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsContacts.put("perk", new TableInfo.Column("perk", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsContacts.put("cardBrand", new TableInfo.Column("cardBrand", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysContacts = new HashSet<TableInfo.ForeignKey>(0);
@@ -105,7 +104,7 @@ public final class ContactRoomDatabase_Impl extends ContactRoomDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "5a53552b305c410d12a0489899f235e8", "03065b5732b0a4489de4d603b8bd57a8");
+    }, "b639ecc8b7904a8d58afc9fab6486b83", "a290453606cdc48a2e990dfcb295e5ca");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)
