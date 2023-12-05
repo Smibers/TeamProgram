@@ -19,6 +19,7 @@
             android:theme="?attr/actionBarTheme"
             android:visibility="visible"
             app:layout_constraintTop_toTopOf="parent"
+            app:titleTextColor="@color/white"
             tools:visibility="visible" />
 
         <androidx.fragment.app.FragmentContainerView
