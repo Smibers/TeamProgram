@@ -11,6 +11,12 @@ import com.cps298.chaching.Contact
 import com.cps298.chaching.R
 
 import com.cps298.chaching.databinding.ContactListItemBinding
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
+
+
+
 
 class ContactListAdapter(private val contactItemLayout: Int) :  RecyclerView.Adapter<ContactListAdapter.ViewHolder>() {
     private var _binding: ContactListItemBinding? = null
@@ -38,7 +44,7 @@ class ContactListAdapter(private val contactItemLayout: Int) :  RecyclerView.Ada
         val item4 = holder.item4
         val item5 = holder.item5
         val item6 = holder.item6
-//        val item7 = holder.item7
+        val item7 = holder.item7
         val deleteBtn = holder.deleteBtn
         contactList.let {
             item.text = it!![listPosition].cardName
@@ -47,8 +53,18 @@ class ContactListAdapter(private val contactItemLayout: Int) :  RecyclerView.Ada
             item4.text = it!![listPosition].fee
             item5.text = it!![listPosition].perk
             item6.text = it!![listPosition].useCategory
-//            item7.text = it!![listPosition].ownership
+            item7.text = it!![listPosition].expiration
+
+            //check if card is expired, set text red
+            val currentDate: String =
+                SimpleDateFormat("MM-yyyy", Locale.getDefault()).format(Date())
+            if (item7.text.equals(currentDate)){
+
+                item7.setTextColor (0xFFFF0000.toInt()) //red
+
+            }
         }
+
 
         //WE NEED THIS TO CALL THE ONCLICK IN THE ONBINDVIEWHOLDER
         //var listener: onItemClickListener? = null
@@ -90,7 +106,7 @@ class ContactListAdapter(private val contactItemLayout: Int) :  RecyclerView.Ada
         var item4: TextView = itemView.findViewById(R.id.fee_row)
         var item5: TextView = itemView.findViewById(R.id.perk_row)
         var item6: TextView = itemView.findViewById(R.id.useCategory_row)
-//        var item7: TextView = itemView.findViewById(R.id.ownership_row)
+        var item7: TextView = itemView.findViewById(R.id.ownership_row)
         val deleteBtn: ImageView = itemView.findViewById(R.id.deleteBtn) //First in the adapter you need to add the delete button
     }
 }

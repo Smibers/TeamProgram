@@ -12,10 +12,6 @@
         "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/fragment_profile.xml"
     },
     {
-        "merged": "com.cps298.chaching.app-mergeDebugResources-50:/layout/nav_controller.xml",
-        "source": "com.cps298.chaching.app-main-53:/layout/nav_controller.xml"
-    },
-    {
         "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-mergeDebugResources-50:/layout/contact_list_item.xml",
         "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/contact_list_item.xml"
     },
@@ -30,6 +26,10 @@
     {
         "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-mergeDebugResources-50:/layout/fragment_search.xml",
         "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/fragment_search.xml"
+    },
+    {
+        "merged": "com.cps298.chaching.app-mergeDebugResources-50:/layout/main_fragment2.xml",
+        "source": "com.cps298.chaching.app-main-53:/layout/main_fragment2.xml"
     },
     {
         "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-mergeDebugResources-50:/layout/main_fragment2.xml",

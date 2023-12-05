@@ -36,10 +36,6 @@
         "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/drawable/side_nav_bar.xml"
     },
     {
-        "merged": "com.cps298.chaching.app-merged_res-51:/layout_nav_controller.xml.flat",
-        "source": "com.cps298.chaching.app-main-53:/layout/nav_controller.xml"
-    },
-    {
         "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/layout_nav_controller.xml.flat",
         "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/nav_controller.xml"
     },
@@ -110,5 +106,9 @@
     {
         "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.cps298.chaching.app-merged_res-51:/layout_main_fragment2.xml.flat",
+        "source": "com.cps298.chaching.app-main-53:/layout/main_fragment2.xml"
     }
 ]

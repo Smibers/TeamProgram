@@ -10158,7 +10158,7 @@
         <item name="android:statusBarColor" ns2:targetApi="l">?attr/colorPrimaryVariant</item>
         
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item> 
-        <item name="android:textColorPrimary">@android:color/white</item>
+
     </style></file><file path="/Users/kay/Documents/chaching 7/ChaChing/app/src/main/res/values/styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         
         <item name="windowActionBar">false</item>
