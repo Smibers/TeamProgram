@@ -38,16 +38,16 @@ class ContactListAdapter(private val contactItemLayout: Int) :  RecyclerView.Ada
         val item4 = holder.item4
         val item5 = holder.item5
         val item6 = holder.item6
-        val item7 = holder.item7
+//        val item7 = holder.item7
         val deleteBtn = holder.deleteBtn
         contactList.let {
             item.text = it!![listPosition].cardName
             item2.text = it!![listPosition].cardBrand
             item3.text = it!![listPosition].id.toString() //store PK in view so when I go to delete I can delete by PK
-            item4.text = it!![listPosition].perk
-            item5.text = it!![listPosition].useCategory
-            item6.text = it!![listPosition].fee
-            item7.text = it!![listPosition].ownership
+            item4.text = it!![listPosition].fee
+            item5.text = it!![listPosition].perk
+            item6.text = it!![listPosition].useCategory
+//            item7.text = it!![listPosition].ownership
         }
 
         //WE NEED THIS TO CALL THE ONCLICK IN THE ONBINDVIEWHOLDER
@@ -87,10 +87,10 @@ class ContactListAdapter(private val contactItemLayout: Int) :  RecyclerView.Ada
         var item: TextView = itemView.findViewById(R.id.contact_row)
         var item2: TextView = itemView.findViewById(R.id.number_row)
         var item3: TextView = itemView.findViewById(R.id.primarykey_row)
-        var item4: TextView = itemView.findViewById(R.id.perk_row)
-        var item5: TextView = itemView.findViewById(R.id.useCategory_row)
-        var item6: TextView = itemView.findViewById(R.id.fee_row)
-        var item7: TextView = itemView.findViewById(R.id.ownership_row)
+        var item4: TextView = itemView.findViewById(R.id.fee_row)
+        var item5: TextView = itemView.findViewById(R.id.perk_row)
+        var item6: TextView = itemView.findViewById(R.id.useCategory_row)
+//        var item7: TextView = itemView.findViewById(R.id.ownership_row)
         val deleteBtn: ImageView = itemView.findViewById(R.id.deleteBtn) //First in the adapter you need to add the delete button
     }
 }
