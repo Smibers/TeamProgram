@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.cps298.chaching.app-mergeDebugResources-50:/layout/fragment_search.xml",
+        "source": "com.cps298.chaching.app-main-53:/layout/fragment_search.xml"
+    },
+    {
+        "merged": "com.cps298.chaching.app-mergeDebugResources-50:/layout/contact_list_item.xml",
+        "source": "com.cps298.chaching.app-main-53:/layout/contact_list_item.xml"
+    },
+    {
+        "merged": "com.cps298.chaching.app-mergeDebugResources-50:/layout/nav_controller.xml",
+        "source": "com.cps298.chaching.app-main-53:/layout/nav_controller.xml"
+    },
+    {
+        "merged": "com.cps298.chaching.app-mergeDebugResources-50:/layout/main_activity.xml",
+        "source": "com.cps298.chaching.app-main-53:/layout/main_activity.xml"
+    },
+    {
+        "merged": "com.cps298.chaching.app-mergeDebugResources-50:/layout/main_fragment.xml",
+        "source": "com.cps298.chaching.app-main-53:/layout/main_fragment.xml"
+    }
+]

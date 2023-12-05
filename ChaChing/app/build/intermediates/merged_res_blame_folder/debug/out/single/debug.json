@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/layout_main_activity.xml.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/main_activity.xml"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/layout_contact_list_item.xml.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/contact_list_item.xml"
+    },
+    {
+        "merged": "com.cps298.chaching.app-merged_res-51:/navigation_nav_graph.xml.flat",
+        "source": "com.cps298.chaching.app-main-53:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/layout_fragment_search.xml.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/fragment_search.xml"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/layout_nav_controller.xml.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/nav_controller.xml"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/drawable_ic_baseline_delete_24.xml.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/drawable/ic_baseline_delete_24.xml"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/navigation_nav_graph.xml.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/layout_main_fragment.xml.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/main_fragment.xml"
+    },
+    {
+        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/mipmap-xxhdpi/ic_launcher.png"
+    }
+]

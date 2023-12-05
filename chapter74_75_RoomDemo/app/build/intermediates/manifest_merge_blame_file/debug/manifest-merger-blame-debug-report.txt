@@ -1,0 +1,82 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ebookfrenzy.roomdemo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->C:\Users\smith\OneDrive\Desktop\chapter74_75_RoomDemo\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\smith\OneDrive\Desktop\chapter74_75_RoomDemo\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\smith\OneDrive\Desktop\chapter74_75_RoomDemo\app\src\main\AndroidManifest.xml:5:5-19:19
+12        android:allowBackup="true"
+12-->C:\Users\smith\OneDrive\Desktop\chapter74_75_RoomDemo\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.7.0] C:\Users\smith\.gradle\caches\transforms-3\0e7fd1b1e0c170391813c3bf966f678e\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:extractNativeLibs="false"
+16        android:icon="@mipmap/ic_launcher"
+16-->C:\Users\smith\OneDrive\Desktop\chapter74_75_RoomDemo\app\src\main\AndroidManifest.xml:7:9-43
+17        android:label="@string/app_name"
+17-->C:\Users\smith\OneDrive\Desktop\chapter74_75_RoomDemo\app\src\main\AndroidManifest.xml:8:9-41
+18        android:roundIcon="@mipmap/ic_launcher_round"
+18-->C:\Users\smith\OneDrive\Desktop\chapter74_75_RoomDemo\app\src\main\AndroidManifest.xml:9:9-54
+19        android:supportsRtl="true"
+19-->C:\Users\smith\OneDrive\Desktop\chapter74_75_RoomDemo\app\src\main\AndroidManifest.xml:10:9-35
+20        android:testOnly="true"
+21        android:theme="@style/Theme.RoomDemo" >
+21-->C:\Users\smith\OneDrive\Desktop\chapter74_75_RoomDemo\app\src\main\AndroidManifest.xml:11:9-46
+22        <activity
+22-->C:\Users\smith\OneDrive\Desktop\chapter74_75_RoomDemo\app\src\main\AndroidManifest.xml:12:9-18:20
+23            android:name="com.ebookfrenzy.roomdemo.MainActivity"
+23-->C:\Users\smith\OneDrive\Desktop\chapter74_75_RoomDemo\app\src\main\AndroidManifest.xml:12:19-47
+24            android:exported="true" >
+24-->C:\Users\smith\OneDrive\Desktop\chapter74_75_RoomDemo\app\src\main\AndroidManifest.xml:12:48-71
+25            <intent-filter>
+25-->C:\Users\smith\OneDrive\Desktop\chapter74_75_RoomDemo\app\src\main\AndroidManifest.xml:13:13-17:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->C:\Users\smith\OneDrive\Desktop\chapter74_75_RoomDemo\app\src\main\AndroidManifest.xml:14:17-69
+26-->C:\Users\smith\OneDrive\Desktop\chapter74_75_RoomDemo\app\src\main\AndroidManifest.xml:14:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\Users\smith\OneDrive\Desktop\chapter74_75_RoomDemo\app\src\main\AndroidManifest.xml:16:17-77
+28-->C:\Users\smith\OneDrive\Desktop\chapter74_75_RoomDemo\app\src\main\AndroidManifest.xml:16:27-74
+29            </intent-filter>
+30        </activity>
+31
+32        <service
+32-->[androidx.room:room-runtime:2.4.2] C:\Users\smith\.gradle\caches\transforms-3\cc642f3c9f7162b3a258bb274b485265\transformed\room-runtime-2.4.2\AndroidManifest.xml:25:9-28:40
+33            android:name="androidx.room.MultiInstanceInvalidationService"
+33-->[androidx.room:room-runtime:2.4.2] C:\Users\smith\.gradle\caches\transforms-3\cc642f3c9f7162b3a258bb274b485265\transformed\room-runtime-2.4.2\AndroidManifest.xml:26:13-74
+34            android:directBootAware="true"
+34-->[androidx.room:room-runtime:2.4.2] C:\Users\smith\.gradle\caches\transforms-3\cc642f3c9f7162b3a258bb274b485265\transformed\room-runtime-2.4.2\AndroidManifest.xml:27:13-43
+35            android:exported="false" />
+35-->[androidx.room:room-runtime:2.4.2] C:\Users\smith\.gradle\caches\transforms-3\cc642f3c9f7162b3a258bb274b485265\transformed\room-runtime-2.4.2\AndroidManifest.xml:28:13-37
+36
+37        <provider
+37-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smith\.gradle\caches\transforms-3\36a0ca5d24daa10f5d9d1674d7462536\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+38            android:name="androidx.startup.InitializationProvider"
+38-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smith\.gradle\caches\transforms-3\36a0ca5d24daa10f5d9d1674d7462536\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+39            android:authorities="com.ebookfrenzy.roomdemo.androidx-startup"
+39-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smith\.gradle\caches\transforms-3\36a0ca5d24daa10f5d9d1674d7462536\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+40            android:exported="false" >
+40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smith\.gradle\caches\transforms-3\36a0ca5d24daa10f5d9d1674d7462536\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+41            <meta-data
+41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smith\.gradle\caches\transforms-3\36a0ca5d24daa10f5d9d1674d7462536\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+42                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smith\.gradle\caches\transforms-3\36a0ca5d24daa10f5d9d1674d7462536\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+43                android:value="androidx.startup" />
+43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\smith\.gradle\caches\transforms-3\36a0ca5d24daa10f5d9d1674d7462536\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+44            <meta-data
+44-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\smith\.gradle\caches\transforms-3\3e0b71932d1456f66d591f4bf123a15d\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+45                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+45-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\smith\.gradle\caches\transforms-3\3e0b71932d1456f66d591f4bf123a15d\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+46                android:value="androidx.startup" />
+46-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\smith\.gradle\caches\transforms-3\3e0b71932d1456f66d591f4bf123a15d\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+47        </provider>
+48    </application>
+49
+50</manifest>

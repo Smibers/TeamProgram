@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\smith\\OneDrive\\Desktop\\chapter74_75_RoomDemo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\main_activity.xml",
+        "source": "C:\\Users\\smith\\OneDrive\\Desktop\\chapter74_75_RoomDemo\\app\\src\\main\\res\\layout\\main_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\smith\\OneDrive\\Desktop\\chapter74_75_RoomDemo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\main_fragment.xml",
+        "source": "C:\\Users\\smith\\OneDrive\\Desktop\\chapter74_75_RoomDemo\\app\\src\\main\\res\\layout\\main_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\smith\\OneDrive\\Desktop\\chapter74_75_RoomDemo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\contact_list_item.xml",
+        "source": "C:\\Users\\smith\\OneDrive\\Desktop\\chapter74_75_RoomDemo\\app\\src\\main\\res\\layout\\contact_list_item.xml"
+    }
+]
