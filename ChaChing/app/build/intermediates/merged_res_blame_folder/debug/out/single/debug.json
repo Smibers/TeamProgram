@@ -1,19 +1,19 @@
 [
     {
-        "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-merged_res-51:\\navigation_nav_graph.xml.flat",
-        "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\navigation\\nav_graph.xml"
-    },
-    {
-        "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-merged_res-51:\\layout_nav_header_main.xml.flat",
-        "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\layout\\nav_header_main.xml"
+        "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-merged_res-51:\\layout_contact_list_item.xml.flat",
+        "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\layout\\contact_list_item.xml"
     },
     {
         "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-merged_res-51:\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-merged_res-51:\\layout_contact_list_item.xml.flat",
-        "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\layout\\contact_list_item.xml"
+        "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-merged_res-51:\\layout_nav_header_main.xml.flat",
+        "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-merged_res-51:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\navigation\\nav_graph.xml"
     },
     {
         "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-merged_res-51:\\drawable_ic_launcher_background.xml.flat",
@@ -160,16 +160,16 @@
         "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "com.cps298.chaching.app-merged_res-51:/layout_fragment_search.xml.flat",
+        "source": "com.cps298.chaching.app-main-53:/layout/fragment_search.xml"
+    },
+    {
         "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-merged_res-51:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-merged_res-51:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
-        "merged": "com.cps298.chaching.app-merged_res-51:/layout_main_fragment2.xml.flat",
-        "source": "com.cps298.chaching.app-main-53:/layout/main_fragment2.xml"
     },
     {
         "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-merged_res-51:\\mipmap-xxxhdpi_mcduck_round.webp.flat",

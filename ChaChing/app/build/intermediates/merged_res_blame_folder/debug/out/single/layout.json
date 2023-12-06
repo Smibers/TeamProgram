@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.cps298.chaching.app-mergeDebugResources-50:/layout/fragment_search.xml",
+        "source": "com.cps298.chaching.app-main-53:/layout/fragment_search.xml"
+    },
+    {
         "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-mergeDebugResources-50:\\layout\\main_fragment.xml",
         "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\layout\\main_fragment.xml"
     },
@@ -26,10 +30,6 @@
     {
         "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-mergeDebugResources-50:\\layout\\main_fragment2.xml",
         "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\layout\\main_fragment2.xml"
-    },
-    {
-        "merged": "com.cps298.chaching.app-mergeDebugResources-50:/layout/main_fragment2.xml",
-        "source": "com.cps298.chaching.app-main-53:/layout/main_fragment2.xml"
     },
     {
         "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-mergeDebugResources-50:\\layout\\contact_list_item.xml",

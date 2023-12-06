@@ -3423,6 +3423,8 @@ string product_id
 string product_name
 string product_quantity
 string profile_header_desc
+string search
+string search_hint
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
