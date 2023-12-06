@@ -3186,13 +3186,13 @@ int layout design_text_input_end_icon 0x7f0b002b
 int layout design_text_input_start_icon 0x7f0b002c
 int layout fragment_profile 0x7f0b002d
 int layout fragment_search 0x7f0b002e
+int layout home_activity 0x7f0b007d
+int layout home_fragment 0x7f0b007c
 int layout m3_alert_dialog 0x7f0b002f
 int layout m3_alert_dialog_actions 0x7f0b0030
 int layout m3_alert_dialog_title 0x7f0b0031
 int layout main_activity 0x7f0b0032
-int layout main_activity2 0x7f0b0033
 int layout main_fragment 0x7f0b0034
-int layout main_fragment2 0x7f0b0035
 int layout material_chip_input_combo 0x7f0b0036
 int layout material_clock_display 0x7f0b0037
 int layout material_clock_display_divider 0x7f0b0038

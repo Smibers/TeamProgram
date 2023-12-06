@@ -1,8 +1,7 @@
-package com.cps298.chaching.ui.main
+package com.cps298.chaching.ui.main.home
 
 
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -10,45 +9,37 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
 import com.cps298.chaching.R
 
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.cps298.chaching.Contact
 import androidx.fragment.app.viewModels
-import androidx.navigation.Navigation
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
-import androidx.navigation.fragment.findNavController
-import com.cps298.chaching.databinding.MainFragment2Binding
+import com.cps298.chaching.databinding.HomeFragmentBinding
+import com.cps298.chaching.ui.main.ContactListAdapter
 
-import java.util.*
 
-import com.cps298.chaching.databinding.MainFragmentBinding
 import com.cps298.chaching.ui.main.search.SearchFragment
 
-class MainFragment2 : Fragment() {
+class HomeFragment : Fragment() {
     //add button listeners
     //add observers on live data
 
     private var adapter: ContactListAdapter? = null
 
     companion object {
-        fun newInstance() = MainFragment2()
+        fun newInstance() = HomeFragment()
     }
 
-    val viewModel: MainViewModel2 by viewModels() //needed to change this to MainViewModel2
-    private var _binding: MainFragment2Binding? = null
+    val viewModel: HomeViewModel by viewModels() //needed to change this to MainViewModel2
+    private var _binding: HomeFragmentBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = MainFragment2Binding.inflate(inflater, container, false)
+        _binding = HomeFragmentBinding.inflate(inflater, container, false)
 
         listenerSetup()
         observerSetup()
@@ -186,13 +177,13 @@ class MainFragment2 : Fragment() {
         binding.contactRecycler.layoutManager = LinearLayoutManager(context)
         binding.contactRecycler.adapter = adapter
 
-        adapter!!.settingListener(object: ContactListAdapter.onItemClickListener{
+        adapter!!.settingListener(object: ContactListAdapter.onItemClickListener {
             //...code here to send the id to the deleteContact method of the mainviewmodel
             override fun onClick(id: String) {
                 //return ()
                 var contactId: Int = Integer.parseInt(id)
                 viewModel.deleteContact(contactId)
-                Log.d("MainFragment2", "deleteButton Detected, ID: " + id)
+                Log.d("HomeFragment", "deleteButton Detected, ID: " + id)
             }
 
         })

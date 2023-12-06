@@ -3187,13 +3187,13 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_profile
 layout fragment_search
+layout home_activity
+layout home_fragment
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
 layout main_activity
-layout main_activity2
 layout main_fragment
-layout main_fragment2
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider

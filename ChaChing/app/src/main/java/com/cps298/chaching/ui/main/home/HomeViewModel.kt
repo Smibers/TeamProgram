@@ -1,4 +1,4 @@
-package com.cps298.chaching.ui.main
+package com.cps298.chaching.ui.main.home
 
 import android.app.Application
 import android.util.Log
@@ -8,7 +8,7 @@ import androidx.lifecycle.MutableLiveData
 import com.cps298.chaching.Contact
 import com.cps298.chaching.ContactRepository
 
-class MainViewModel2(application: Application) : AndroidViewModel(application) {
+class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
 
     private val repository: ContactRepository = ContactRepository(application)
@@ -21,7 +21,7 @@ class MainViewModel2(application: Application) : AndroidViewModel(application) {
     }
 
     fun insertContact(contact: Contact) {
-        Log.d("MainViewModel2", "insertContact Ran")
+        Log.d("HomeViewModel", "insertContact Ran")
         repository.insertContact(contact)
     }
 
@@ -39,18 +39,18 @@ class MainViewModel2(application: Application) : AndroidViewModel(application) {
     }
 
     fun getAllContacts(): LiveData<List<Contact>>? {
-        Log.d("MainViewModel2 ", "getAllContacts Ran")
+        Log.d("HomeViewModel ", "getAllContacts Ran")
         return allContacts
     }
 
     fun getAllContactsDesc() {
-        Log.d("MainViewModel2 ", "getAllContactsDesc Ran")
+        Log.d("HomeViewModel ", "getAllContactsDesc Ran")
         //return allContacts
         repository.getAllContactsDESC()
     }
 
     fun getAllContactsAsc() {
-        Log.d("MainViewModel2 ", "getAllContactsAsc Ran")
+        Log.d("HomeViewModel ", "getAllContactsAsc Ran")
         //return allContacts
         repository.getAllContactsASC()
     }

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.cps298.chaching.ui.main.MainFragment2"
+        android:name="com.cps298.chaching.ui.main.home.HomeFragment"
         android:label="main_fragment">
         <action
             android:id="@+id/action_mainFragment_to_searchFragment"

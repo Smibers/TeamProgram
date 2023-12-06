@@ -4,7 +4,7 @@
             "outputFile": "com.cps298.chaching.app-mergeDebugResources-49:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jsikw\\.gradle\\caches\\transforms-3\\a7e5386c8075beb8993722e54c672838\\transformed\\appcompat-1.4.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "/Users/kay/.gradle/caches/transforms-3/a7e5386c8075beb8993722e54c672838/transformed/appcompat-1.4.1/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

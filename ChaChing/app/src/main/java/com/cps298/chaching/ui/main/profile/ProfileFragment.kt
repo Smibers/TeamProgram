@@ -17,7 +17,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.cps298.chaching.Contact
 import com.cps298.chaching.R
 import com.cps298.chaching.databinding.FragmentProfileBinding
-import com.cps298.chaching.databinding.MainFragment2Binding
+import com.cps298.chaching.databinding.HomeFragmentBinding
 import com.cps298.chaching.ui.main.ContactListAdapter
 
 class ProfileFragment : Fragment() {

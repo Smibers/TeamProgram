@@ -8,7 +8,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.cps298.chaching.ui.main.MainFragment
-import com.cps298.chaching.ui.main.MainFragment2
+import com.cps298.chaching.ui.main.home.HomeFragment
 import com.cps298.chaching.ui.main.profile.ProfileFragment
 import com.cps298.chaching.ui.main.search.SearchFragment
 import com.google.android.material.navigation.NavigationView
@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
                     // Handle the home action
                     Log.d("MainActivity ", "Home button clicked on nav")
 
-                    val newFragment = MainFragment2()
+                    val newFragment = HomeFragment()
                     val transaction = supportFragmentManager.beginTransaction() //use supportFragmentManager instead of parentFragmentManager in MainActivity
                     transaction.replace(R.id.frameLayout, newFragment)
                     transaction.addToBackStack(null)
@@ -90,9 +90,9 @@ class MainActivity : AppCompatActivity() {
         if (supportFragmentManager.backStackEntryCount > 0) {
             val currentFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView2)
 
-            if (currentFragment !is MainFragment2) {
+            if (currentFragment !is HomeFragment) {
                 // If current fragment is not MainFragment2, replace it.
-                val newFragment = MainFragment2()
+                val newFragment = HomeFragment()
                 val transaction = supportFragmentManager.beginTransaction() //use supportFragmentManager instead of parentFragmentManager in MainActivity
                 transaction.replace(R.id.frameLayout, newFragment)
                 transaction.addToBackStack(null)
