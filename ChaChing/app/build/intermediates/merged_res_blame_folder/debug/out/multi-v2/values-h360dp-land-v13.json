@@ -4,7 +4,7 @@
             "outputFile": "com.cps298.chaching.app-mergeDebugResources-49:/values-h360dp-land-v13/values-h360dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/kay/.gradle/caches/transforms-3/063a65d39d3e64fe1f939be34af7e06c/transformed/material-1.5.0/res/values-h360dp-land-v13/values-h360dp-land-v13.xml",
+                    "source": "C:\\Users\\jsikw\\.gradle\\caches\\transforms-3\\063a65d39d3e64fe1f939be34af7e06c\\transformed\\material-1.5.0\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

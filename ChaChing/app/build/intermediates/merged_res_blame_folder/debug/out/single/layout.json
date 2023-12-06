@@ -1,42 +1,42 @@
 [
     {
-        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-mergeDebugResources-50:/layout/nav_controller.xml",
-        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/nav_controller.xml"
+        "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-mergeDebugResources-50:\\layout\\main_fragment.xml",
+        "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\layout\\main_fragment.xml"
     },
     {
-        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-mergeDebugResources-50:/layout/main_activity2.xml",
-        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/main_activity2.xml"
+        "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-mergeDebugResources-50:\\layout\\nav_header_main.xml",
+        "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\layout\\nav_header_main.xml"
     },
     {
-        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-mergeDebugResources-50:/layout/fragment_profile.xml",
-        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/fragment_profile.xml"
+        "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-mergeDebugResources-50:\\layout\\main_activity2.xml",
+        "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\layout\\main_activity2.xml"
     },
     {
-        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-mergeDebugResources-50:/layout/contact_list_item.xml",
-        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/contact_list_item.xml"
+        "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-mergeDebugResources-50:\\layout\\main_activity.xml",
+        "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\layout\\main_activity.xml"
     },
     {
-        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-mergeDebugResources-50:/layout/main_fragment.xml",
-        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/main_fragment.xml"
+        "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-mergeDebugResources-50:\\layout\\fragment_search.xml",
+        "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\layout\\fragment_search.xml"
     },
     {
-        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-mergeDebugResources-50:/layout/main_activity.xml",
-        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/main_activity.xml"
+        "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-mergeDebugResources-50:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-mergeDebugResources-50:/layout/fragment_search.xml",
-        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/fragment_search.xml"
+        "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-mergeDebugResources-50:\\layout\\main_fragment2.xml",
+        "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\layout\\main_fragment2.xml"
     },
     {
         "merged": "com.cps298.chaching.app-mergeDebugResources-50:/layout/main_fragment2.xml",
         "source": "com.cps298.chaching.app-main-53:/layout/main_fragment2.xml"
     },
     {
-        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-mergeDebugResources-50:/layout/main_fragment2.xml",
-        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/main_fragment2.xml"
+        "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-mergeDebugResources-50:\\layout\\contact_list_item.xml",
+        "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\layout\\contact_list_item.xml"
     },
     {
-        "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-mergeDebugResources-50:/layout/nav_header_main.xml",
-        "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/layout/nav_header_main.xml"
+        "merged": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-mergeDebugResources-50:\\layout\\nav_controller.xml",
+        "source": "C:\\Users\\jsikw\\.gradle\\daemon\\8.0\\com.cps298.chaching.app-main-53:\\layout\\nav_controller.xml"
     }
 ]

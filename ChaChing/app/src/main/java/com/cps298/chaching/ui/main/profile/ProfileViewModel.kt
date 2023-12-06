@@ -1,13 +1,38 @@
 package com.cps298.chaching.ui.main.profile
 
+import android.app.Application
+import android.util.Log
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.cps298.chaching.Contact
+import com.cps298.chaching.ContactRepository
 
-class ProfileViewModel : ViewModel() {
+class ProfileViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is your profile"
+    private val repository: ContactRepository = ContactRepository(application)
+    private val allContacts: LiveData<List<Contact>>?
+    private val searchResults: MutableLiveData<List<Contact>>
+
+    init {
+        allContacts = repository.allContacts
+        searchResults = repository.searchResults
     }
-    val text: LiveData<String> = _text
+
+    fun deleteContact(id: Int) { //changed from string to int
+        repository.deleteContact(id)
+        //needs to be ID
+    }
+
+    fun getSearchResults(): MutableLiveData<List<Contact>> {
+        return searchResults
+    }
+
+    fun getAllContacts(): LiveData<List<Contact>>? {
+        Log.d("ProfileFragment ", "getAllContacts Ran")
+        return allContacts
+    }
+
+
 }

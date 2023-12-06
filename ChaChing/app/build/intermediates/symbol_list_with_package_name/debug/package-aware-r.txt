@@ -2526,6 +2526,7 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable mcduck_background
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -2917,6 +2918,7 @@ id pin
 id position
 id postLayout
 id primarykey_row
+id profileDisplayButton
 id progress_circular
 id progress_horizontal
 id radio
@@ -3031,7 +3033,6 @@ id text_gallery
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
-id text_slideshow
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -3266,6 +3267,9 @@ layout text_view_without_line_height
 menu activity_main_drawer
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap mcduck
+mipmap mcduck_foreground
+mipmap mcduck_round
 navigation nav_graph
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
@@ -3309,6 +3313,7 @@ string chip_text
 string clear_text_end_icon_content_description
 string delete_string
 string dest_title
+string display
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -3417,6 +3422,7 @@ string path_password_strike_through
 string product_id
 string product_name
 string product_quantity
+string profile_header_desc
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat

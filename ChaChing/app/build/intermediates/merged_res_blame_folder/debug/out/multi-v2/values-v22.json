@@ -4,7 +4,7 @@
             "outputFile": "com.cps298.chaching.app-mergeDebugResources-49:/values-v22/values-v22.xml",
             "map": [
                 {
-                    "source": "/Users/kay/.gradle/caches/transforms-3/a7e5386c8075beb8993722e54c672838/transformed/appcompat-1.4.1/res/values-v22/values-v22.xml",
+                    "source": "C:\\Users\\jsikw\\.gradle\\caches\\transforms-3\\a7e5386c8075beb8993722e54c672838\\transformed\\appcompat-1.4.1\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

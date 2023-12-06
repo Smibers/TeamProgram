@@ -51,28 +51,31 @@
             <EditText
                 android:id="@+id/cardName"
                 android:layout_width="97dp"
-                android:layout_height="wrap_content"
+                android:layout_height="68dp"
                 android:ems="10"
-                android:hint="Enter Card Name"
+                android:hint="Card Name"
                 android:inputType="none"
+                android:textAlignment="center"
                 android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/expiration"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_width="92dp"
+                android:layout_height="68dp"
                 android:ems="10"
                 android:hint="MM-YYYY"
                 android:inputType="none"
+                android:textAlignment="center"
                 android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/perk"
-                android:layout_width="147dp"
+                android:layout_width="70dp"
                 android:layout_height="68dp"
                 android:ems="10"
-                android:hint="Enter Perk"
+                android:hint="Perk (%,Pts,Miles)"
                 android:inputType="none"
+                android:textAlignment="center"
                 android:textSize="18sp" />
 
         </TableRow>
@@ -85,20 +88,22 @@
 
             <EditText
                 android:id="@+id/useCategory"
-                android:layout_width="124dp"
+                android:layout_width="133dp"
                 android:layout_height="55dp"
                 android:ems="10"
-                android:hint="Enter Card use"
+                android:hint="Reward Type"
                 android:inputType="textPersonName"
+                android:textAlignment="center"
                 android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/cardBrand"
-                android:layout_width="124dp"
+                android:layout_width="144dp"
                 android:layout_height="55dp"
                 android:ems="10"
-                android:hint="Enter Card Brand"
+                android:hint="Card Brand"
                 android:inputType="textPersonName"
+                android:textAlignment="center"
                 android:textSize="18sp" />
 
             <TextView
@@ -111,11 +116,12 @@
 
             <EditText
                 android:id="@+id/fee"
-                android:layout_width="124dp"
+                android:layout_width="112dp"
                 android:layout_height="55dp"
                 android:ems="10"
-                android:hint="Enter Fee"
+                android:hint="Annual Fee"
                 android:inputType="textPersonName"
+                android:textAlignment="center"
                 android:textSize="18sp" />
 
         </TableRow>
@@ -141,7 +147,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/find_string" />
+            android:text="@string/find_string"
+            android:visibility="gone"/>
 
         <Button
             android:id="@+id/deleteButton"
@@ -158,7 +165,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:foregroundTint="@color/black"
-            android:text="ASC" />
+            android:text="ASC"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/descButton"
@@ -166,7 +174,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:foregroundTint="@color/black"
-            android:text="DESC" />
+            android:text="DESC"
+            android:visibility="gone" />
     </LinearLayout>
 
     <Button
@@ -174,7 +183,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="switch fragment"
-        tools:visibility="visible" />
+        android:visibility="gone" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/contact_recycler"
