@@ -46,12 +46,32 @@ public final class ContactListItemBinding implements ViewBinding {
   public final ConstraintLayout relativeLayout;
 
   @NonNull
+  public final TextView textView2;
+
+  @NonNull
+  public final TextView textView5;
+
+  @NonNull
+  public final TextView textView6;
+
+  @NonNull
+  public final TextView textView7;
+
+  @NonNull
+  public final TextView textView8;
+
+  @NonNull
+  public final TextView textView9;
+
+  @NonNull
   public final TextView useCategoryRow;
 
   private ContactListItemBinding(@NonNull CardView rootView, @NonNull TextView contactRow,
       @NonNull ImageView deleteBtn, @NonNull TextView feeRow, @NonNull TextView numberRow,
       @NonNull TextView ownershipRow, @NonNull TextView perkRow, @NonNull TextView primarykeyRow,
-      @NonNull ConstraintLayout relativeLayout, @NonNull TextView useCategoryRow) {
+      @NonNull ConstraintLayout relativeLayout, @NonNull TextView textView2,
+      @NonNull TextView textView5, @NonNull TextView textView6, @NonNull TextView textView7,
+      @NonNull TextView textView8, @NonNull TextView textView9, @NonNull TextView useCategoryRow) {
     this.rootView = rootView;
     this.contactRow = contactRow;
     this.deleteBtn = deleteBtn;
@@ -61,6 +81,12 @@ public final class ContactListItemBinding implements ViewBinding {
     this.perkRow = perkRow;
     this.primarykeyRow = primarykeyRow;
     this.relativeLayout = relativeLayout;
+    this.textView2 = textView2;
+    this.textView5 = textView5;
+    this.textView6 = textView6;
+    this.textView7 = textView7;
+    this.textView8 = textView8;
+    this.textView9 = textView9;
     this.useCategoryRow = useCategoryRow;
   }
 
@@ -139,6 +165,42 @@ public final class ContactListItemBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView2;
+      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
+      if (textView2 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView5;
+      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
+      if (textView5 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView6;
+      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
+      if (textView6 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView7;
+      TextView textView7 = ViewBindings.findChildViewById(rootView, id);
+      if (textView7 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView8;
+      TextView textView8 = ViewBindings.findChildViewById(rootView, id);
+      if (textView8 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView9;
+      TextView textView9 = ViewBindings.findChildViewById(rootView, id);
+      if (textView9 == null) {
+        break missingId;
+      }
+
       id = R.id.useCategory_row;
       TextView useCategoryRow = ViewBindings.findChildViewById(rootView, id);
       if (useCategoryRow == null) {
@@ -146,7 +208,8 @@ public final class ContactListItemBinding implements ViewBinding {
       }
 
       return new ContactListItemBinding((CardView) rootView, contactRow, deleteBtn, feeRow,
-          numberRow, ownershipRow, perkRow, primarykeyRow, relativeLayout, useCategoryRow);
+          numberRow, ownershipRow, perkRow, primarykeyRow, relativeLayout, textView2, textView5,
+          textView6, textView7, textView8, textView9, useCategoryRow);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
