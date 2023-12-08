@@ -9,174 +9,77 @@
     android:orientation="vertical"
     tools:context=".ui.main.MainFragment">
 
-    <TableLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <TableRow
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:visibility="gone">
+            android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/product_id"
-                android:textSize="18sp" />
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/contactID"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/not_assigned"
-                android:textSize="18sp" />
-        </TableRow>
+                <Button
+                    android:id="@+id/groceryButton"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#5DA657"
+                    android:shadowColor="#000000"
+                    android:shadowRadius="0"
+                    android:text="Grocery" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:gravity="center">
+                <Button
+                    android:id="@+id/restaurantButton"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#5DA657"
+                    android:text="Restaurant" />
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Contact Name"
-                android:textSize="18sp"
-                android:visibility="gone" />
+                <Button
+                    android:id="@+id/gasButton"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#5DA657"
+                    android:text="Gas" />
 
-            <EditText
-                android:id="@+id/cardName"
-                android:layout_width="97dp"
-                android:layout_height="68dp"
-                android:ems="10"
-                android:hint="Card Name"
-                android:inputType="none"
-                android:textAlignment="center"
-                android:textSize="18sp" />
+                <Button
+                    android:id="@+id/pharmacyButton"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#5DA657"
+                    android:text="Pharmacy" />
 
-            <EditText
-                android:id="@+id/expiration"
-                android:layout_width="92dp"
-                android:layout_height="68dp"
-                android:ems="10"
-                android:hint="MM-YYYY"
-                android:inputType="none"
-                android:textAlignment="center"
-                android:textSize="18sp" />
+                <Button
+                    android:id="@+id/travelButton"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#5DA657"
+                    android:text="Travel" />
 
-            <EditText
-                android:id="@+id/perk"
-                android:layout_width="70dp"
-                android:layout_height="68dp"
-                android:ems="10"
-                android:hint="Perk (%,Pts,Miles)"
-                android:inputType="none"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:gravity="center">
-
-            <EditText
-                android:id="@+id/useCategory"
-                android:layout_width="133dp"
-                android:layout_height="55dp"
-                android:ems="10"
-                android:hint="Reward Type"
-                android:inputType="textPersonName"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-
-            <EditText
-                android:id="@+id/cardBrand"
-                android:layout_width="144dp"
-                android:layout_height="55dp"
-                android:ems="10"
-                android:hint="Card Brand"
-                android:inputType="textPersonName"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Card Brand"
-                android:textSize="18sp"
-                android:visibility="gone" />
-
-            <EditText
-                android:id="@+id/fee"
-                android:layout_width="112dp"
-                android:layout_height="55dp"
-                android:ems="10"
-                android:hint="Annual Fee"
-                android:inputType="textPersonName"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-
-        </TableRow>
-
-    </TableLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/addButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/add_string" />
-
-        <Button
-            android:id="@+id/findButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/find_string"
-            android:visibility="gone"/>
-
-        <Button
-            android:id="@+id/deleteButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:foregroundTint="@color/black"
-            android:text="@string/delete_string"
-            android:visibility="gone" />
-
-        <Button
-            android:id="@+id/ascButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:foregroundTint="@color/black"
-            android:text="ASC"
-            android:visibility="gone" />
-
-        <Button
-            android:id="@+id/descButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:foregroundTint="@color/black"
-            android:text="DESC"
-            android:visibility="gone" />
-    </LinearLayout>
+                <Button
+                    android:id="@+id/otherButton"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#5DA657"
+                    android:text="Other" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
 
     <Button
         android:id="@+id/switchFragment"
@@ -188,5 +91,6 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/contact_recycler"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        tools:visibility="gone" />
 </LinearLayout>

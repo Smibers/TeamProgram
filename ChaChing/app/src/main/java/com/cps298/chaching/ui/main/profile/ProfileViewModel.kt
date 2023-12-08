@@ -34,5 +34,26 @@ class ProfileViewModel(application: Application) : AndroidViewModel(application)
         return allContacts
     }
 
+    fun insertContact(contact: Contact) {
+        Log.d("HomeViewModel", "insertContact Ran")
+        repository.insertContact(contact)
+    }
+
+    fun findContact(name: String) {
+        repository.findContact(name)
+    }
+
+    fun getAllContactsDesc() {
+        Log.d("HomeViewModel ", "getAllContactsDesc Ran")
+        //return allContacts
+        repository.getAllContactsDESC()
+    }
+
+    fun getAllContactsAsc() {
+        Log.d("HomeViewModel ", "getAllContactsAsc Ran")
+        //return allContacts
+        repository.getAllContactsASC()
+    }
+
 
 }

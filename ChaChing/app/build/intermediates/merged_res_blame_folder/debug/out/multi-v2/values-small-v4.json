@@ -4,7 +4,7 @@
             "outputFile": "com.cps298.chaching.app-mergeDebugResources-49:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "/Users/olivermcmillen/.gradle/caches/transforms-3/063a65d39d3e64fe1f939be34af7e06c/transformed/material-1.5.0/res/values-small-v4/values-small-v4.xml",
+                    "source": "/Users/kay/.gradle/caches/transforms-3/063a65d39d3e64fe1f939be34af7e06c/transformed/material-1.5.0/res/values-small-v4/values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

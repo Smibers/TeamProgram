@@ -9,39 +9,39 @@
 9        android:targetSdkVersion="32" />
 10
 11    <application
-11-->/Users/kay/Documents/chaching 8/ChaChing/app/src/main/AndroidManifest.xml:4:5-18:19
+11-->/Users/kay/Documents/chaching 9/ChaChing/app/src/main/AndroidManifest.xml:4:5-18:19
 12        android:allowBackup="true"
-12-->/Users/kay/Documents/chaching 8/ChaChing/app/src/main/AndroidManifest.xml:5:9-35
+12-->/Users/kay/Documents/chaching 9/ChaChing/app/src/main/AndroidManifest.xml:5:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 13-->[androidx.core:core:1.8.0] /Users/kay/.gradle/caches/transforms-3/3fe0e73e2feab981535f511ffa1ccc02/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:extractNativeLibs="false"
 16        android:icon="@mipmap/ic_launcher"
-16-->/Users/kay/Documents/chaching 8/ChaChing/app/src/main/AndroidManifest.xml:6:9-43
+16-->/Users/kay/Documents/chaching 9/ChaChing/app/src/main/AndroidManifest.xml:6:9-43
 17        android:label="@string/app_name"
-17-->/Users/kay/Documents/chaching 8/ChaChing/app/src/main/AndroidManifest.xml:7:9-41
+17-->/Users/kay/Documents/chaching 9/ChaChing/app/src/main/AndroidManifest.xml:7:9-41
 18        android:roundIcon="@mipmap/ic_launcher_round"
-18-->/Users/kay/Documents/chaching 8/ChaChing/app/src/main/AndroidManifest.xml:8:9-54
+18-->/Users/kay/Documents/chaching 9/ChaChing/app/src/main/AndroidManifest.xml:8:9-54
 19        android:supportsRtl="true"
-19-->/Users/kay/Documents/chaching 8/ChaChing/app/src/main/AndroidManifest.xml:9:9-35
+19-->/Users/kay/Documents/chaching 9/ChaChing/app/src/main/AndroidManifest.xml:9:9-35
 20        android:testOnly="true"
 21        android:theme="@style/Theme.RoomDemo" >
-21-->/Users/kay/Documents/chaching 8/ChaChing/app/src/main/AndroidManifest.xml:10:9-46
+21-->/Users/kay/Documents/chaching 9/ChaChing/app/src/main/AndroidManifest.xml:10:9-46
 22        <activity
-22-->/Users/kay/Documents/chaching 8/ChaChing/app/src/main/AndroidManifest.xml:11:9-17:20
+22-->/Users/kay/Documents/chaching 9/ChaChing/app/src/main/AndroidManifest.xml:11:9-17:20
 23            android:name="com.cps298.chaching.MainActivity"
-23-->/Users/kay/Documents/chaching 8/ChaChing/app/src/main/AndroidManifest.xml:11:19-66
+23-->/Users/kay/Documents/chaching 9/ChaChing/app/src/main/AndroidManifest.xml:11:19-66
 24            android:exported="true" >
-24-->/Users/kay/Documents/chaching 8/ChaChing/app/src/main/AndroidManifest.xml:11:67-90
+24-->/Users/kay/Documents/chaching 9/ChaChing/app/src/main/AndroidManifest.xml:11:67-90
 25            <intent-filter>
-25-->/Users/kay/Documents/chaching 8/ChaChing/app/src/main/AndroidManifest.xml:12:13-16:29
+25-->/Users/kay/Documents/chaching 9/ChaChing/app/src/main/AndroidManifest.xml:12:13-16:29
 26                <action android:name="android.intent.action.MAIN" />
-26-->/Users/kay/Documents/chaching 8/ChaChing/app/src/main/AndroidManifest.xml:13:17-69
-26-->/Users/kay/Documents/chaching 8/ChaChing/app/src/main/AndroidManifest.xml:13:25-66
+26-->/Users/kay/Documents/chaching 9/ChaChing/app/src/main/AndroidManifest.xml:13:17-69
+26-->/Users/kay/Documents/chaching 9/ChaChing/app/src/main/AndroidManifest.xml:13:25-66
 27
 28                <category android:name="android.intent.category.LAUNCHER" />
-28-->/Users/kay/Documents/chaching 8/ChaChing/app/src/main/AndroidManifest.xml:15:17-77
-28-->/Users/kay/Documents/chaching 8/ChaChing/app/src/main/AndroidManifest.xml:15:27-74
+28-->/Users/kay/Documents/chaching 9/ChaChing/app/src/main/AndroidManifest.xml:15:17-77
+28-->/Users/kay/Documents/chaching 9/ChaChing/app/src/main/AndroidManifest.xml:15:27-74
 29            </intent-filter>
 30        </activity>
 31

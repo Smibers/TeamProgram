@@ -50,6 +50,43 @@ class ProfileFragment : Fragment() {
             viewModel.getAllContacts()
             Log.d(tag, "Profile Display button clicked")
         }
+
+        binding.addButton.setOnClickListener {
+            val expiration = binding.expiration.text.toString()
+            val cardName = binding.cardName.text.toString()
+            val cardBrand = binding.cardBrand.text.toString()
+            val fee = binding.fee.text.toString()
+            val perk = binding.perk.text.toString()
+            val useCategory = binding.useCategory.text.toString()
+//            val ownership = binding.ownership.text.toString()
+
+            if (cardName != "" && cardBrand != "" && fee != "" && perk != "" && useCategory != "") {
+                val contact = Contact(cardName,expiration , cardBrand, perk, useCategory, fee )
+                viewModel.insertContact(contact)
+                clearFields()
+            } else {
+                val toast = Toast.makeText(context, "You must enter values for all boxes", Toast.LENGTH_SHORT)
+                toast.show()
+                //binding.contactID.text = "Incomplete information"
+            }
+        }
+
+        binding.descButton.setOnClickListener {
+            viewModel.getAllContactsDesc()
+            Log.d(tag, "DESC button clicked") }
+
+        binding.ascButton.setOnClickListener {
+            viewModel.getAllContactsAsc()
+            Log.d(tag, "ASC button clicked") }
+
+        binding.findButton.setOnClickListener { viewModel.findContact(binding.cardName.text.toString()) }
+
+        binding.deleteButton.setOnClickListener {
+            //val userInput = Integer.parseInt(binding.contactName.text.toString())
+            //viewModel.deleteContact(userInput)//checks if user has entered the right name before deleting, i'll have to
+            //repurpose this for use with the trashcan probably, I can compare it to a hidden value stored in the recyclerview
+            clearFields()
+        }
     }
 
     private fun observerSetup() {
@@ -112,4 +149,17 @@ class ProfileFragment : Fragment() {
         })
     }
 
+    private fun clearFields() { //clear contacts on ui to prevent repetition
+        binding.contactID.text = ""
+        binding.cardName.setText("")
+        binding.cardBrand.setText("")
+        binding.fee.setText("")
+//        binding.ownership.setText("")
+        binding.expiration.setText("")
+        binding.useCategory.setText("")
+        binding.perk.setText("")
+    }
+
 }
+
+//}
