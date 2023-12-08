@@ -28,6 +28,10 @@
         "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/drawable/ic_launcher_background.xml"
     },
     {
+        "merged": "com.cps298.chaching.app-merged_res-51:/layout_fragment_profile.xml.flat",
+        "source": "com.cps298.chaching.app-main-53:/layout/fragment_profile.xml"
+    },
+    {
         "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/mipmap-anydpi-v26/ic_launcher.xml"
     },
@@ -166,10 +170,6 @@
     {
         "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/mipmap-xxxhdpi_mcduck_foreground.webp.flat",
         "source": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-main-53:/mipmap-xxxhdpi/mcduck_foreground.webp"
-    },
-    {
-        "merged": "com.cps298.chaching.app-merged_res-51:/layout_home_fragment.xml.flat",
-        "source": "com.cps298.chaching.app-main-53:/layout/home_fragment.xml"
     },
     {
         "merged": "/Users/kay/.gradle/daemon/8.0/com.cps298.chaching.app-merged_res-51:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",

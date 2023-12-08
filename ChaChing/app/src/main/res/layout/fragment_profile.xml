@@ -26,6 +26,22 @@
             android:paddingTop="8dp"
             app:srcCompat="@mipmap/mcduck_round" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Welcome to your ChaChing Profile!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points Accumulated:"
+            android:textSize="16sp"
+            tools:visibility="visible" />
+
         <TableLayout
             android:layout_width="wrap_content"
             android:layout_height="165dp">
@@ -187,22 +203,6 @@
                 android:text="DESC"
                 android:visibility="gone" />
         </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="8dp"
-            android:text="Welcome to your ChaChing Profile!"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Points Accumulated:"
-            android:textSize="16sp"
-            tools:visibility="visible" />
 
         <Button
             android:id="@+id/profileDisplayButton"
