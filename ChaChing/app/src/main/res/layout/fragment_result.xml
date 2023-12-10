@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cps298.chaching.ui.main.profile.ProfileFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/side_nav_bar"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/profile_header_desc"
+            android:paddingTop="8dp"
+            android:visibility="gone"
+            app:srcCompat="@mipmap/mcduck_round"
+            tools:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Welcome to your ChaChing Profile!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points Accumulated:"
+            android:textSize="16sp"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="165dp"
+            android:visibility="gone"
+            tools:visibility="gone">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/contactID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/not_assigned"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Name"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/cardName"
+                    android:layout_width="97dp"
+                    android:layout_height="68dp"
+                    android:ems="10"
+                    android:hint="Card Name"
+                    android:inputType="none"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/expiration"
+                    android:layout_width="92dp"
+                    android:layout_height="68dp"
+                    android:ems="10"
+                    android:hint="MM-YYYY"
+                    android:inputType="none"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/perk"
+                    android:layout_width="70dp"
+                    android:layout_height="68dp"
+                    android:ems="10"
+                    android:hint="Perk (%,Pts,Miles)"
+                    android:inputType="none"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/useCategory"
+                    android:layout_width="133dp"
+                    android:layout_height="55dp"
+                    android:ems="10"
+                    android:hint="Reward Type"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/cardBrand"
+                    android:layout_width="144dp"
+                    android:layout_height="55dp"
+                    android:ems="10"
+                    android:hint="Card Brand"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Card Brand"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/fee"
+                    android:layout_width="112dp"
+                    android:layout_height="55dp"
+                    android:ems="10"
+                    android:hint="Annual Fee"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="gone">
+
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/add_string" />
+
+            <Button
+                android:id="@+id/findButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/find_string"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:foregroundTint="@color/black"
+                android:text="@string/delete_string"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/ascButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:foregroundTint="@color/black"
+                android:text="ASC"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/descButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:foregroundTint="@color/black"
+                android:text="DESC"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/profileDisplayButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/display"
+            android:visibility="gone"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/contact_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="562dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

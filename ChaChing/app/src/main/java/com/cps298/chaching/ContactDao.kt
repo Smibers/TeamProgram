@@ -31,4 +31,7 @@ interface ContactDao {
     //THIS DOES THE DESC SORT FROM THE DATABASE
     @Query("SELECT * FROM contacts ORDER BY cardName DESC")
     fun getAllContactsDESC(): List<Contact>
+
+    @Query("SELECT * FROM contacts WHERE useCategory = :category")
+    fun getContactsByCategory(category: String): LiveData<List<Contact>>
 }

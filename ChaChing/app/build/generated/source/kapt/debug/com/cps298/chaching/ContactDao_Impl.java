@@ -411,6 +411,92 @@ public final class ContactDao_Impl implements ContactDao {
     }
   }
 
+  @Override
+  public LiveData<List<Contact>> getContactsByCategory(final String category) {
+    final String _sql = "SELECT * FROM contacts WHERE useCategory = ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    if (category == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, category);
+    }
+    return __db.getInvalidationTracker().createLiveData(new String[]{"contacts"}, false, new Callable<List<Contact>>() {
+      @Override
+      public List<Contact> call() throws Exception {
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+        try {
+          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "card");
+          final int _cursorIndexOfCardName = CursorUtil.getColumnIndexOrThrow(_cursor, "cardName");
+          final int _cursorIndexOfUseCategory = CursorUtil.getColumnIndexOrThrow(_cursor, "useCategory");
+          final int _cursorIndexOfFee = CursorUtil.getColumnIndexOrThrow(_cursor, "fee");
+          final int _cursorIndexOfExpiration = CursorUtil.getColumnIndexOrThrow(_cursor, "expiration");
+          final int _cursorIndexOfPerk = CursorUtil.getColumnIndexOrThrow(_cursor, "perk");
+          final int _cursorIndexOfCardBrand = CursorUtil.getColumnIndexOrThrow(_cursor, "cardBrand");
+          final List<Contact> _result = new ArrayList<Contact>(_cursor.getCount());
+          while(_cursor.moveToNext()) {
+            final Contact _item;
+            _item = new Contact();
+            final int _tmpId;
+            _tmpId = _cursor.getInt(_cursorIndexOfId);
+            _item.setId(_tmpId);
+            final String _tmpCardName;
+            if (_cursor.isNull(_cursorIndexOfCardName)) {
+              _tmpCardName = null;
+            } else {
+              _tmpCardName = _cursor.getString(_cursorIndexOfCardName);
+            }
+            _item.setCardName(_tmpCardName);
+            final String _tmpUseCategory;
+            if (_cursor.isNull(_cursorIndexOfUseCategory)) {
+              _tmpUseCategory = null;
+            } else {
+              _tmpUseCategory = _cursor.getString(_cursorIndexOfUseCategory);
+            }
+            _item.setUseCategory(_tmpUseCategory);
+            final String _tmpFee;
+            if (_cursor.isNull(_cursorIndexOfFee)) {
+              _tmpFee = null;
+            } else {
+              _tmpFee = _cursor.getString(_cursorIndexOfFee);
+            }
+            _item.setFee(_tmpFee);
+            final String _tmpExpiration;
+            if (_cursor.isNull(_cursorIndexOfExpiration)) {
+              _tmpExpiration = null;
+            } else {
+              _tmpExpiration = _cursor.getString(_cursorIndexOfExpiration);
+            }
+            _item.setExpiration(_tmpExpiration);
+            final String _tmpPerk;
+            if (_cursor.isNull(_cursorIndexOfPerk)) {
+              _tmpPerk = null;
+            } else {
+              _tmpPerk = _cursor.getString(_cursorIndexOfPerk);
+            }
+            _item.setPerk(_tmpPerk);
+            final String _tmpCardBrand;
+            if (_cursor.isNull(_cursorIndexOfCardBrand)) {
+              _tmpCardBrand = null;
+            } else {
+              _tmpCardBrand = _cursor.getString(_cursorIndexOfCardBrand);
+            }
+            _item.setCardBrand(_tmpCardBrand);
+            _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    });
+  }
+
   public static List<Class<?>> getRequiredConverters() {
     return Collections.emptyList();
   }

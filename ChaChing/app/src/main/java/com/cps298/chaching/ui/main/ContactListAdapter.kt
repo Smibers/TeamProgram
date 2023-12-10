@@ -18,7 +18,7 @@ import java.util.Locale
 
 
 
-class ContactListAdapter(private val contactItemLayout: Int) :  RecyclerView.Adapter<ContactListAdapter.ViewHolder>() {
+class ContactListAdapter(private val contactItemLayout: Int, private val hideDeleteButton: Boolean) :  RecyclerView.Adapter<ContactListAdapter.ViewHolder>() {
     private var _binding: ContactListItemBinding? = null
     var listener: onItemClickListener? = null
 
@@ -46,6 +46,15 @@ class ContactListAdapter(private val contactItemLayout: Int) :  RecyclerView.Ada
         val item6 = holder.item6
         val item7 = holder.item7
         val deleteBtn = holder.deleteBtn
+
+        if (hideDeleteButton) {
+            holder.deleteBtn.visibility = View.GONE
+        } else {
+            holder.deleteBtn.visibility = View.VISIBLE
+        }
+        //hide delete button in the normal category view
+        //as it should only be visible in the profile view
+
         contactList.let {
             item.text = it!![listPosition].cardName
             item2.text = it!![listPosition].cardBrand

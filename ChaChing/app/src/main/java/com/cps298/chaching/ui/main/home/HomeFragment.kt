@@ -2,24 +2,21 @@ package com.cps298.chaching.ui.main.home
 
 
 
+
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import com.cps298.chaching.R
-
-import androidx.lifecycle.Observer
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.cps298.chaching.Contact
+import android.widget.Button
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
+import com.cps298.chaching.R
 import com.cps298.chaching.databinding.HomeFragmentBinding
 import com.cps298.chaching.ui.main.ContactListAdapter
+import com.cps298.chaching.ui.main.result.ResultFragment
 
-
-import com.cps298.chaching.ui.main.search.SearchFragment
 
 class HomeFragment : Fragment() {
     //add button listeners
@@ -41,11 +38,51 @@ class HomeFragment : Fragment() {
     ): View {
         _binding = HomeFragmentBinding.inflate(inflater, container, false)
 
+        //setting up onClick listeners for the buttons
+        setupButtonClickListener(binding.gasButton)
+        setupButtonClickListener(binding.groceryButton)
+        setupButtonClickListener(binding.restaurantButton)
+        setupButtonClickListener(binding.pharmacyButton)
+        setupButtonClickListener(binding.travelButton)
+        setupButtonClickListener(binding.otherButton)
+
         listenerSetup()
         observerSetup()
         //recyclerSetup()
 
+        //test used before onClickListeners were set up above
+//        binding.gasButton.setOnClickListener {
+//            navigateToResultFragment("Gas")
+//        }
+
         return binding.root
+
+
+    }
+    //check if a button is pressed, then grab the text to reference it
+    //against the DB for cards that match.
+    private fun setupButtonClickListener(button: Button) {
+        button.setOnClickListener {
+            val category = button.text.toString()
+            navigateToResultFragment(category)
+        }
+    }
+
+
+
+    //when the gas button is clicked, navigate to the result fragment to pull up results for gas
+    private fun navigateToResultFragment(category: String) {
+        val resultFragment = ResultFragment().apply {
+            arguments = Bundle().apply {
+                putString("category", category)
+            }
+        }
+
+        requireActivity().supportFragmentManager.beginTransaction().apply {
+            replace(com.cps298.chaching.R.id.frameLayout, resultFragment)
+            addToBackStack(null)
+            commit()
+        }
     }
 
     /*DEPRECATED SO I MOVED THE FUNCTION CALLS TO ONCREATEVIEW
@@ -58,6 +95,9 @@ class HomeFragment : Fragment() {
     }*/
 
     private fun listenerSetup() {
+
+
+
 //
 //        binding.addButton.setOnClickListener {
 //            val expiration = binding.expiration.text.toString()
@@ -123,6 +163,7 @@ class HomeFragment : Fragment() {
                 Log.d(tag, "getAllContacts observer activated")
             }
         })
+
 
         /*viewModel.getAllContactsDesc()?.observe(viewLifecycleOwner, Observer { contacts ->
             contacts?.let  {
@@ -205,6 +246,10 @@ class HomeFragment : Fragment() {
 //        binding.useCategory.setText("")
 //        binding.perk.setText("")
 //    }
+
+
+
+
 //
 //
 }

@@ -96,4 +96,8 @@ class ContactRepository(application: Application) {
             return@async contactDao?.findContact(name)
         }
 
+    fun getContactsByCategory(category: String): LiveData<List<Contact>>? {
+        return contactDao?.getContactsByCategory(category)
+    }
+
 }

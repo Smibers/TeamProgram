@@ -2,6 +2,7 @@ package com.cps298.chaching.ui.main.home
 
 import android.app.Application
 import android.util.Log
+import android.widget.Button
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -54,5 +55,9 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         //return allContacts
         repository.getAllContactsASC()
     }
+
+
+
+
 
 }

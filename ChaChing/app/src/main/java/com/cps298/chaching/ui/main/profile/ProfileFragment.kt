@@ -133,7 +133,7 @@ class ProfileFragment : Fragment() {
     }
 
     private fun recyclerSetup() {
-        adapter = ContactListAdapter(R.layout.contact_list_item)
+        adapter = ContactListAdapter(R.layout.contact_list_item, false)
         binding.contactRecycler.layoutManager = LinearLayoutManager(context)
         binding.contactRecycler.adapter = adapter
 

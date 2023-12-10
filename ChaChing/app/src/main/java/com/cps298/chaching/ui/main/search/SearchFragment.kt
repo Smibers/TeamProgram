@@ -86,7 +86,7 @@ class SearchFragment : Fragment() {
     }
 
     private fun recyclerSetup() {
-        adapter = ContactListAdapter(R.layout.contact_list_item)
+        adapter = ContactListAdapter(R.layout.contact_list_item, true)
         binding.contactRecycler.layoutManager = LinearLayoutManager(context)
         binding.contactRecycler.adapter = adapter
 

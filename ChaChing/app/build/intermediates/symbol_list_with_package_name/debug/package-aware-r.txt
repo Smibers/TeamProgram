@@ -3198,6 +3198,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_profile
+layout fragment_result
 layout fragment_search
 layout home_activity
 layout home_fragment
